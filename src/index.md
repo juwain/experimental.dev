@@ -1,6 +1,6 @@
 ---
 layout: home
-title: experimental.dev
+title: Experimental Frontend
 metaDesc: Blog about experimenting with web technologies
 postsHeading: Latest posts
 archiveButtonText: See all posts
