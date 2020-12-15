@@ -7,13 +7,13 @@
     },
     {
       "text": "GitHub",
-      "url": "https://github.com/hankchizljaw/hylia",
+      "url": "https://github.com/juwain/experimental.dev",
       "external": true
     },
     {
-      "text": "Example Contact Page",
-      "url": "/contact",
-      "external": false
+      "text": "Twitter",
+      "url": "https://twitter.com/juwain",
+      "external": true
     }
   ]
 }
