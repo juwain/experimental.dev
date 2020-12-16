@@ -10,7 +10,7 @@ tags:
 
 ![Игровое поле из игры Battle City](/images/1-tp9iififqxpitv1vyfzebq.png "Игровое поле из игры Battle City")
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Battle city grid layout" src="https://codepen.io/juwain/embed/xYryva?height=300&theme-id=9939&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="Battle city grid layout" src="https://codepen.io/juwain/embed/preview/xYryva?height=300&theme-id=9939&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/juwain/pen/xYryva'>Battle city grid layout</a> by juwain
   (<a href='https://codepen.io/juwain'>@juwain</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
