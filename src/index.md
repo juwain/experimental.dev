@@ -6,4 +6,4 @@ postsHeading: Latest posts
 archiveButtonText: See all posts
 socialImage: ""
 ---
-Blog about free coding with web technologies
+Blog about playing with web technologies
