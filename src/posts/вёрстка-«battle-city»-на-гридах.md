@@ -2,9 +2,7 @@
 layout: layouts/post.njk
 title: Вёрстка «Battle city» на гридах
 date: 2020-12-16T13:53:46.970Z
-tags:
-  - css
-  - grid layout
+tags: []
 ---
 Пришла в голову идея собрать лейаут игры из детства «Battle City» на гридах. Почему бы и нет? Вот что получилось:
 
