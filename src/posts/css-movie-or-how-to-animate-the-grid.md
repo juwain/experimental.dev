@@ -3,9 +3,9 @@ layout: layouts/post.njk
 title: CSS movie, or How to animate the Grid
 date: 2021-01-03T12:25:38.814Z
 ---
-If you are dealing with CSS, then you probably wondered which CSS properties you can animate. If you google, you can find this list - ["Animatable CSS properties"] (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). As expected, this includes all sorts of colors, sizes, margins and other properties to which you can apply smooth transitions.
+If you are dealing with CSS, then you probably wondered which CSS properties you can animate. If you google, you can find this list - ["Animatable CSS properties"](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). As expected, this includes all sorts of colors, sizes, margins and other properties to which you can apply smooth transitions.
 
-What happens if the animation will be applied to a property which value cannot be interpolated? The [spec] (https://drafts.csswg.org/css-transitions/#animatable-properties) says:
+What happens if the animation will be applied to a property which value cannot be interpolated? The [spec](https://drafts.csswg.org/css-transitions/#animatable-properties) says:
 
 > Since the from and to values cannot be interpolated, the animation is done [in a single step](https://drafts.csswg.org/css-transitions/#step-types).
 
@@ -58,8 +58,6 @@ I decided to add not just empty divs into HTML, but a paragraph with a "movie sr
   <span class="q">movie.</span>
 </p>
 ```
-
-Спаны в абзаце — это кирпичики для построения форм в отдельных «кадрах». Текст в них при этом будет скрыт с помощью `font-size: 0;`, а в разметке он останется из соображений доступности.
 
 Spans in a paragraph are the "bricks" in separate "frames". The text will be hidden with `font-size: 0;`, and it will remain in the HTML because of accessibility reasons.
 
@@ -194,4 +192,4 @@ By the way, I also decided to make the layout of the "button" with a grid, which
 
 In addition to exploring features of CSS Grid, I've discovered a new role for animation in this article. It can be used not only to smoothly change the appearance of an element, but also as a built-in CSS-timer that allows you to control the states of an element over time using any CSS properties. It's like a setTimeout / setInterval in JS.
 
-Unfortunately, this feature (at least with grids) didn't work in Safari. I think this is a bug in the browser. But, in any case, in one of the next articles I will explore this feature more detail.
+Unfortunately, this feature (at least with grid) didn't work in Safari. I think this is a bug in the browser. But, in any case, in one of the next articles I will explore this feature more detail.
