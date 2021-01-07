@@ -2,6 +2,10 @@
 layout: layouts/post.njk
 title: CSS movie, or How to animate the Grid
 date: 2021-01-03T12:25:38.814Z
+tags:
+  - css
+  - grid layout
+  - animation
 ---
 If you are dealing with CSS, then you probably wondered which CSS properties you can animate. If you google, you can find this list - ["Animatable CSS properties"](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). As expected, this includes all sorts of colors, sizes, margins and other properties to which you can apply smooth transitions.
 
