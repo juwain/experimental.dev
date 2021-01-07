@@ -2,6 +2,9 @@
 layout: layouts/post.njk
 title: Variable times
 date: 2021-01-02T11:10:36.886Z
+tags:
+  - css
+  - custom properties
 ---
 In this article, I'll show you how I creared a demo with CSS custom properties and refined my CSS-thinking along the way.
 
