@@ -124,7 +124,7 @@ Here's what we've got:
 
 ![Clock with arrows pointing up](/images/1-vmcybbwxsvwo2mbijghhag.png "Clock with arrows pointing up")
 
-Turn the arrows for clarity:
+Let's turn the arrows for clarity:
 
 ```css
 .clock__hand--hour {
