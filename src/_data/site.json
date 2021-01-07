@@ -1,13 +1,13 @@
 {
   "showThemeCredit": false,
-  "name": "experimental.dev",
-  "shortDesc": " ",
-  "url": "https://",
+  "name": "juwain.dev",
+  "shortDesc": "Personal tech blog ",
+  "url": "https://juwain.dev",
   "authorEmail": "zyuzin.vitaly@gmail.com",
   "authorHandle": "@juwain",
   "authorName": "Vitaly Zyuzin",
   "enableThirdPartyComments": false,
   "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
   "faviconPath": "/images/favicon.png",
-  "maxPostsPerPage": 5
+  "maxPostsPerPage": 10
 }
