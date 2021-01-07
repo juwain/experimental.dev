@@ -42,10 +42,10 @@ A generic container of the clock `<time>`, three hands, and a decorative SVG for
 
 - in "arrow" spans the current time will be written in numbers using JavaScript;
 - the **datetime** attribute of the `<time>` element will be set up with the corresponding value;
-- let's hide the decorative element `<svg>` from screen readers with the **aria-hidden** attribute and remove the semantic meaning from it using the **role** attribute.
+- the decorative element `<svg>` will be hidden from screen readers with the **aria-hidden** attribute and remove the semantic meaning from it using the **role** attribute.
 - - -
 
-CSS time! I will not describe the entire code of the demo (it is better to [play with it live] (https://codepen.io/juwain/pen/OQQVKE)), but will focus only on the key points.
+CSS time! I will not describe the entire code of the demo (it is better to [play with it live](https://codepen.io/juwain/pen/OQQVKE)), but will focus only on the key points.
 
 Let's define the watch appearance settings - the diameter and thickness of the watch border:
 
@@ -124,7 +124,7 @@ Here's what we've got:
 
 ![Clock with arrows pointing up](/images/1-vmcybbwxsvwo2mbijghhag.png "Clock with arrows pointing up")
 
-Turn the arrows for clarity:
+Let's turn the arrows for clarity:
 
 ```css
 .clock__hand--hour {
@@ -179,7 +179,7 @@ Let's check what happened:
 
 It's ok, 15 seconds, as specified in `--seconds`.
 
-The minute hand is next. Here everything is exactly the same as for the second hand - there are 60 minutes in an hour:
+Next is the minute hand. Here everything is exactly the same as for the second hand - there are 60 minutes in an hour:
 
 ```css
 .clock__hand--minute {
