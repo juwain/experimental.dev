@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: Blending modes + Grid = 🖤
 date: 2021-01-07T15:34:07.920Z
 ---
-In this article, I continued to experiment with blend modes (another experiment was [in the previous article] (https://medium.com/@juwain/selective-desaturation-with-blend-modes-54eb1143f105)) and decided to make something more "layout"-like with grids.
+In this article, I continued to experiment with blend modes (another experiment was [in the previous article](https://medium.com/@juwain/selective-desaturation-with-blend-modes-54eb1143f105)) and decided to make something more "layout"-like with grids.
 
 An advertisement in the subway with tinted areas of the image led me to this idea.
 
