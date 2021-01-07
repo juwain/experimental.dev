@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: '"Battle City" on Grid'
+title: '"Battle City" on CSS Grid'
 date: 2021-01-01T13:11:29.275Z
 tags:
   - css
