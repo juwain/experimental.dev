@@ -42,10 +42,10 @@ A generic container of the clock `<time>`, three hands, and a decorative SVG for
 
 - in "arrow" spans the current time will be written in numbers using JavaScript;
 - the **datetime** attribute of the `<time>` element will be set up with the corresponding value;
-- let's hide the decorative element `<svg>` from screen readers with the **aria-hidden** attribute and remove the semantic meaning from it using the **role** attribute.
+- the decorative element `<svg>` will be hidden from screen readers with the **aria-hidden** attribute and remove the semantic meaning from it using the **role** attribute.
 - - -
 
-CSS time! I will not describe the entire code of the demo (it is better to [play with it live] (https://codepen.io/juwain/pen/OQQVKE)), but will focus only on the key points.
+CSS time! I will not describe the entire code of the demo (it is better to [play with it live](https://codepen.io/juwain/pen/OQQVKE)), but will focus only on the key points.
 
 Let's define the watch appearance settings - the diameter and thickness of the watch border:
 
