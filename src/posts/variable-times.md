@@ -179,7 +179,7 @@ Let's check what happened:
 
 It's ok, 15 seconds, as specified in `--seconds`.
 
-The minute hand is next. Here everything is exactly the same as for the second hand - there are 60 minutes in an hour:
+Next is the minute hand. Here everything is exactly the same as for the second hand - there are 60 minutes in an hour:
 
 ```css
 .clock__hand--minute {
