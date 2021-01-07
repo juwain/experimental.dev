@@ -46,7 +46,7 @@ This block starts at the third horizontal and vertical grid line; it occupies 2 
 
 Ok, let's create the second block…
 
-3. * Draw the rest of the owl*:
+3. *Draw the rest of the owl*:
 
 ![Playfield layout with all elements](/images/1-mb71mzdkiis1175bdb-nhw.png "Playfield layout with all elements")
 
