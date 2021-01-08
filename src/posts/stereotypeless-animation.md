@@ -2,6 +2,9 @@
 layout: layouts/post.njk
 title: Stereotypeless animation
 date: 2021-01-04T13:20:59.287Z
+tags:
+  - css
+  - animation
 ---
 In this article, I will continue my exploration of the discrete animation topic I've touched in [the previous article](/posts/css-movie-or-how-to-animate-the-grid/). I looked through the list of all the CSS properties and selected a couple that I hadn't thought about animating before.
 
