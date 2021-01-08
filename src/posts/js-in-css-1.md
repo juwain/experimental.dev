@@ -44,7 +44,7 @@ new Function(script)();
 
 It works:
 
-![Browser console with the code running result](/images/1-qizkchbeg-bk4kcx84zikq.png "Browser console with the code running result")
+![Browser console with the code running result](/images/1-qizkchbeg-bk4kcx84zikq.png)
 
 You can reset the value of a custom property over time and execute a new code each time with CSS animation.
 
@@ -147,7 +147,7 @@ Then I creared two HTML pages, included the file `bundle-1.css` into one of them
 
 There were traces in localStorage:
 
-![Browser console with the code running result](/images/1-qw8twl9pzsea27abgzueqq.gif "Browser console with the code running result")
+![Browser console with the code running result](/images/1-qw8twl9pzsea27abgzueqq.gif)
 
 The first CSS-file left the most recent tag, the third – the older, and the second left no trace at all.
 
