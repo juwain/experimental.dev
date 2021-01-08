@@ -84,7 +84,9 @@ setInterval(() => {
 
 It works also:
 
-![Browser console with the code running result](/images/1-md2rtxmnx0xt-tvifkx45g.gif "This code is in the [demo](https://codepen.io/juwain/pen/EEgOdr)").
+![Browser console with the code running result](/images/1-md2rtxmnx0xt-tvifkx45g.gif).
+
+This code is in the [demo](https://codepen.io/juwain/pen/EEgOdr)
 
 ---
 
