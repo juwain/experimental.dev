@@ -74,7 +74,7 @@ By default, the counter is set to `0`. Now you can increment the counter with th
 /* By default, the counter is incremented by 1 */
 ```
 
-The second parameter can be passed to the `counter ()` function, which determines the style of the displayed counter (it can be Arabic or Roman numerals, Greek letters, etc.). I decided to use capital Roman numerals and wrote it like this:
+The second parameter can be passed to the `counter ()` function, which determines the style of the displayed counter (it can be Arabic or Roman numerals, Greek letters, etc). I decided to use capital Roman numerals and wrote it like this:
 
 ```css
 content: counter(my-counter, upper-roman);
@@ -99,7 +99,7 @@ Unfortunately, the counter didn't work as I originally thought. When it was incr
 }
 ```
 
-Another kind of *content* of the `content` property is an image. It is displayed using the `url()` function - `content: url (" path/to/image.jpg ")`. I decided to inject the images directly into the styles, so that at the time of the slide show the image was already loaded. I moved the encoded images to custom properties so that the code remains readable:
+Another kind of *content* of the `content` property is an image. It is displayed using the `url()` function - `content: url("path/to/image.jpg")`. I decided to inject the images directly into the styles, so that at the time of the slide show the image was already loaded. I moved the encoded images to custom properties so that the code remains readable:
 
 ```css
 :root {
@@ -118,7 +118,7 @@ Another kind of *content* of the `content` property is an image. It is displayed
 }
 ```
 
-There are a few more interesting features in the demo that I won't burden the article with (it's better to [explore them live] (https://codepen.io/juwain/pen/MVYVrj).
+There are a few more interesting features in the demo that I won't burden the article with (it's better to [explore them live](https://codepen.io/juwain/pen/MVYVrj)).
 
 In order to justify the inaccessibiliy of all this disgrace somehow, there is a hidden text describing the content of the presentation in the `.info` paragraph in HTML. 🤓
 
@@ -137,7 +137,7 @@ The result is ... Mmmmm, so:
 
 The action has two parts.
 
-The first part is the "cat" animation:
+The first part is the animation of the "cat":
 
 ```css
 .frame {
@@ -216,4 +216,4 @@ Etc. There are seven colors in total, so the `color-change` animation is divided
 
 So it goes 🌈.
 
-Discrete animation has a lot of potential, so it's a pity that it still doesn't fully work in Safari and FireFox, even though it's written in the [spec](https://drafts.csswg.org/css-transitions/#animatable-properties).
+Discrete animation has a lot of potential, so it's a pity that it still doesn't fully work in Safari and Firefox, even though it's written in the [spec](https://drafts.csswg.org/css-transitions/#animatable-properties).
