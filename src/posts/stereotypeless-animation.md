@@ -3,13 +3,13 @@ layout: layouts/post.njk
 title: Stereotypeless animation
 date: 2021-01-04T13:20:59.287Z
 ---
- In this article, I will continue my exploration of the discrete animation topic I've touched in [the previous article](https://medium.com/@juwain/css-grid-animation-movie-28e9d39fb895). I looked through the list of all the CSS properties and selected a couple that I hadn't thought about animating before.
+ In this article, I will continue my exploration of the discrete animation topic I've touched in [the previous article](/posts/css-movie-or-how-to-animate-the-grid/). I looked through the list of all the CSS properties and selected a couple that I hadn't thought about animating before.
 
 The first test object was the `content` property. It's cool: it can display text, CSS counters, images and display the value of HTML-attributes.
 
 This is the slideshow created with one pseudo-element and its `content` property:
 
-![Slideshow](/images/1-j6_8bedsw_mjapo43eg77a.gif "Slideshow")
+![Slideshow](/images/2-j6_8bedsw_mjapo43eg77a.gif "Slideshow")
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Animating content property" src="https://codepen.io/juwain/embed/preview/MVYVrj?height=300&theme-id=9939&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/juwain/pen/MVYVrj'>Animating content property</a> by juwain
