@@ -1,7 +1,11 @@
 ---
 layout: layouts/post.njk
-title: Blending modes + Grid = Love
+title: Blending modes + Grid = 🖤
 date: 2021-01-07T15:34:07.920Z
+tags:
+  - css
+  - grid layout
+  - blend modes
 ---
 In this article, I continued to experiment with blend modes (another experiment was [in the previous article](/posts/taming-of-css-blend-modes/)) and decided to make something more "layout"-like with grids.
 
