@@ -2,18 +2,21 @@
 layout: layouts/post.njk
 title: Taming of CSS blend modes
 date: 2021-01-06T12:18:00.975Z
+tags:
+  - css
+  - blend modes
 ---
 Recently I came up with the idea to recreate this selective desaturation effect in CSS:
 
-![A scene from the film "Sin City"](/images/1-yltnfq85-8a4wosrnczuiw.jpg "A scene from the film 'Sin City'")
+![A scene from the film "Sin City"](/images/1-yltnfq85-8a4wosrnczuiw.jpg "A scene from the “Sin City” movie")
 
 From an artistic point of view, this effect is hackneyed, but I'm interested in the technical side of the issue. That is, the task is to desaturate the entire picture, while leaving the red color intact.
 
 Here's what I've got as a result of the experiments:
 
-![Partially desaturated photo](/images/1-kgtmsjaus_0ntg5ekgecbq.png "Partially desaturated photo")
+![Partially desaturated photo](/images/1-kgtmsjaus_0ntg5ekgecbq.png)
 
-The original photo is taken [here](https://unsplash.com/@luiskcortes).
+The original photo is [here](https://unsplash.com/@luiskcortes).
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Blend modes selective desaturation effect" src="https://codepen.io/juwain/embed/preview/mxLJYj?height=300&theme-id=9939&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/juwain/pen/mxLJYj'>Blend modes selective desaturation effect</a> by juwain
@@ -54,7 +57,7 @@ First, overlay a copy of the image on top of it using a pseudo-element:
 }
 ```
 
-![Layering two identical images in normal blend mode](/images/1-2pxarp_l_m9wepezh056qg.gif "Layering two identical images in normal blend mode")
+![Layering two identical images in normal blend mode](/images/1-2pxarp_l_m9wepezh056qg.gif)
 
 Next, change the blending mode of the top layer to `lighten`. In this mode, dark areas begin to "shine through", and light ones, on the contrary, remain opaque:
 
@@ -70,7 +73,7 @@ The blending mode between layers is set by the `mix-blend-mode` property.
 
 We got what we needed: the dark background of the top layer became transparent, but the light areas — didn't:
 
-![Layering two identical images in lighten blend mode](/images/1-l6g6zwl_ibukmfrxoxxawg.gif "Layering two identical images in lighten blend mode")
+![Layering two identical images in lighten blend mode](/images/1-l6g6zwl_ibukmfrxoxxawg.gif)
 
 Next, let's desaturate the top layer using a CSS filter:
 
@@ -82,7 +85,7 @@ Next, let's desaturate the top layer using a CSS filter:
 
 Now the top layer is overlaid on the bottom color photo with light desaturated areas:
 
-![Layering two identical images in lighten mode with one desaturated layer](/images/1-1wzrhh7ti55nrnzeyduagg.gif "Layering two identical images in lighten mode with one desaturated layer")
+![Layering two identical images in lighten mode with one desaturated layer](/images/1-1wzrhh7ti55nrnzeyduagg.gif)
 
 Almost what we need. Now we need to make the light areas of the top layer more opaque.
 
@@ -92,7 +95,7 @@ So, let's set the gray background color and the blending mode of the picture wit
 
 Finally, we get the desired result:
 
-![Layering two identical images in lighten mode with one desaturated contrast layer](/images/1-xxrllxel6sf2hpijnms2fg.gif "Layering two identical images in lighten mode with one desaturated contrast layer")
+![Layering two identical images in lighten mode with one desaturated contrast layer](/images/1-xxrllxel6sf2hpijnms2fg.gif)
 
 ---
 
@@ -100,7 +103,7 @@ It remains to figure out which colors in this combination of blending modes beco
 
 To do this, I made a demo with layers with striped linear gradients:
 
-![Layering colors with desaturtion](/images/1-u-ewvolqzlopqlm6hzzbcw.png "Layering colors with desaturtion")
+![Layering colors with desaturtion](/images/1-u-ewvolqzlopqlm6hzzbcw.png)
 
 You can explore it live in [demo](https://codepen.io/juwain/pen/vRjaQb).
 
