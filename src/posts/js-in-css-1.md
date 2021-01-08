@@ -2,6 +2,10 @@
 layout: layouts/post.njk
 title: JS in CSS
 date: 2021-01-05T14:24:07.531Z
+tags:
+  - css
+  - js
+  - custom properties
 ---
 Yes, this is not a mistake, today's article is about JavaScript in CSS.
 
