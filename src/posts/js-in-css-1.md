@@ -5,7 +5,7 @@ date: 2021-01-05T14:24:07.531Z
 ---
 Yes, this is not a mistake, today's article is about JavaScript in CSS.
 
-In general, embedding scripts in CSS is a rather strange idea at first glance. And I've got it after reading a fragment of the custom properties [specification] (https://drafts.csswg.org/css-variables/#syntax).
+In general, embedding scripts in CSS is a rather strange idea at first glance. And I've got it after reading a fragment of the custom properties [specification](https://drafts.csswg.org/css-variables/#syntax).
 
 It is written there:
 
@@ -84,15 +84,13 @@ setInterval(() => {
 
 It works also:
 
-![Browser console with the code running result](/images/1-md2rtxmnx0xt-tvifkx45g.gif "Browser console with the code running result")
-
-This code is in the [demo](https://codepen.io/juwain/pen/EEgOdr).
+![Browser console with the code running result](/images/1-md2rtxmnx0xt-tvifkx45g.gif "This code is in the [demo](https://codepen.io/juwain/pen/EEgOdr)").
 
 ---
 
 Playing hackers is certainly fun, but is it possible to use a feature with JS and custom properties with real use somehow?
 
-Based on [Harry Roberts' idea] (https://csswizardry.com/2018/01/finding-dead-css/), I've got the idea of "logging" the CSS code using.
+Based on [Harry Roberts' idea](https://csswizardry.com/2018/01/finding-dead-css/), I've got the idea of "logging" the CSS code using.
 
 Let's say we have many CSS files on a large project that are included into multiple bundles. You need to find out which of the files are used in users' browsers and which are not.
 
