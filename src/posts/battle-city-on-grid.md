@@ -19,7 +19,7 @@ The code creation process isn't much complex:
 
 1. Let's create a layout 26 by 26 fractions with a width and height of 16 pixels each:
 
-![Playfield layout without any elements](/images/1-2wftcgddjkxd4nwfhuh19q.png "Playfield layout without any elements")
+![Playfield layout without any elements](/images/1-2wftcgddjkxd4nwfhuh19q.png)
 
 ```css
 .field {
@@ -33,7 +33,7 @@ The code creation process isn't much complex:
 
 Ok, let's create the first block:
 
-![Playfield layout with one element](/images/1-e_h_qbx0fgdulntherdwnw.png "Playfield layout with one element")
+![Playfield layout with one element](/images/1-e_h_qbx0fgdulntherdwnw.png)
 
 ```css
 .wall-1 {
@@ -48,7 +48,7 @@ Ok, let's create the second block…
 
 3. *Draw the rest of the owl*:
 
-![Playfield layout with all elements](/images/1-mb71mzdkiis1175bdb-nhw.png "Playfield layout with all elements")
+![Playfield layout with all elements](/images/1-mb71mzdkiis1175bdb-nhw.png)
 
 ---
 
