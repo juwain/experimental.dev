@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: JS in CSS
+title: _JS in CSS
 date: 2021-01-02T14:03:29.168Z
 ---
 Да, это не ошибка, сегодняшняя статья именно про JavaScript в CSS.
