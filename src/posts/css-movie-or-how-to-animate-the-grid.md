@@ -17,7 +17,7 @@ That is, the value will switch, but without a smooth transition. It turns out th
 
 Taking this fact into account, I decided to create a small demo with grid animation. I've got such a "movie":
 
-![Alien from space animation](/images/1-gf8uq4fl41ixwuatcxycaq.gif "Alien from space animation")
+![Alien from space animation](/images/1-gf8uq4fl41ixwuatcxycaq.gif)
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="CSS grid movie" src="https://codepen.io/juwain/embed/preview/aqxyxY?height=300&theme-id=9939&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/juwain/pen/aqxyxY'>CSS grid movie</a> by juwain
@@ -103,7 +103,7 @@ In addition to such a visual declaration of the grid appearance, we need to conn
 
 This is how it looks in the browser:
 
-![Layout scheme for grid areas of the letter](/images/1-xpcz-lkdxfta5lzp14ym2q.gif "Layout scheme for grid areas of the letter")
+![Layout scheme for grid areas of the letter](/images/1-xpcz-lkdxfta5lzp14ym2q.gif)
 
 As the "movie" progresses, the value of `grid-template-areas` will take on different values. For example, this:
 
@@ -190,7 +190,7 @@ And the label connected to this checkbox, which will act as a button that starts
 
 By the way, I also decided to make the layout of the "button" with a grid, which has two states:
 
-![Layout scheme for grid areas of the letter](/images/1-np6h_i6-1r1i56v-ln9g0g.gif "Layout scheme for grid areas of the letter")
+![Layout scheme for grid areas of the letter](/images/1-np6h_i6-1r1i56v-ln9g0g.gif)
 
 ---
 
