@@ -3,7 +3,7 @@
     --flow-space: #{get-size(800)};
 
     /**
-     * Generic HTML styles 
+     * Generic HTML styles
      */
     h2 + *,
     h3 + * {
@@ -91,6 +91,10 @@
         -50%
       ); /* changing this value to 49% allows for the suggestion above to also eliminate the horizontal scroll. */
       position: relative;
+    }
+
+    figure {
+      text-align: center;
     }
 
     figure img,
