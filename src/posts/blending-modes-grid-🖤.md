@@ -92,7 +92,7 @@ The result is an excellent responsive layout:
 
 It remains unclear why we needed 20 rows and columns, and how to color a horse with the existing markup?
 
-And here pseudo-elements come to the rescue. Why are `.brand::before` and` .brand::after` not elements of the grid? They will become quite full-fledged participants of the layout, if you set any value of the property `content` to them. Interestingly, although pseudo-elements are not positioned absolutely or relatively, the `z-index` property is applied to them, that is, you can specify the order of the" layers "of grid elements.
+And here pseudo-elements come to the rescue. Why are `.brand::before` and` .brand::after` not elements of the grid? They will become quite full-fledged participants of the layout, if you set any value of the property `content` to them. Interestingly, although pseudo-elements are not positioned absolutely or relatively, the `z-index` property is applied to them, that is, you can specify the order of the "layers" of grid elements.
 
 ```css
 .brand::before,
@@ -133,7 +133,7 @@ It remains to add a little magic of the blending modes, and the horse will be co
 
 ![Stylized image of a horse](/images/1-uik4w-qsklevjrxwhvb2ew.png)
 
-The `hue` blend mode takes the hue of the color of the upper layer (in our case, these are the solid colors `honeydew` and `orchid`), and the saturation and luminosity from the lower one, that is, in a simple way: the colored areas will be tinted, but the black and white will remain so the same. [Last time](https://medium.com/@juwain/selective-desaturation-with-blend-modes-54eb1143f105) I got selective desaturation, but now it's something like "selective toning".
+The `hue` blend mode takes the hue of the color of the upper layer (in our case, these are the solid colors `honeydew` and `orchid`), and the saturation and luminosity from the lower one, that is, in a simple way: the colored areas will be tinted, but the black and white will remain so the same. [Last time](/posts/taming-of-css-blend-modes/) I got selective desaturation, but now it's something like "selective toning".
 
 By the way, I love named colors in CSS! Just think how great it sounds - `honeydew` 🍀.
 
