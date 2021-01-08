@@ -8,7 +8,7 @@ tags:
 ---
 I've got the idea – recreate ["Battle City"](https://en.wikipedia.org/wiki/Battle_City) layout with CSS Grid. Why not? Here is a result:
 
-![Playfield from Battle City video game](/images/1-tp9iififqxpitv1vyfzebq.png "Playfield from Battle City video game")
+![Playfield from Battle City video game](/images/1-tp9iififqxpitv1vyfzebq.png)
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Battle city grid layout" src="https://codepen.io/juwain/embed/preview/xYryva?height=300&theme-id=9939&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/juwain/pen/xYryva'>Battle city grid layout</a> by juwain
