@@ -12,7 +12,7 @@ Programming an analog clock is not exactly an original idea, but it seemed to me
 
 So, here is what I've got:
 
-![Clock with moving hands](/images/1-mnazppc5rps6ag07n4b7qa.gif "Clock with moving hands")
+![Clock with moving hands](/images/1-mnazppc5rps6ag07n4b7qa.gif)
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Custom properties analog clock" src="https://codepen.io/juwain/embed/preview/OQQVKE?height=300&theme-id=9939&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/juwain/pen/OQQVKE'>Custom properties analog clock</a> by juwain
@@ -125,7 +125,7 @@ And now let's override the arrow characteristics in the block modifiers:
 
 Here's what we've got:
 
-![Clock with arrows pointing up](/images/1-vmcybbwxsvwo2mbijghhag.png "Clock with arrows pointing up")
+![Clock with arrows pointing up](/images/1-vmcybbwxsvwo2mbijghhag.png)
 
 Let's turn the arrows for clarity:
 
@@ -146,7 +146,7 @@ Let's turn the arrows for clarity:
 yes, there is such a unit of measure in CSS * /
 ```
 
-![Clock with rotated hands](/images/1-kvfqexw993w5dio5qmtfhw.png "Clock with rotated hands")
+![Clock with rotated hands](/images/1-kvfqexw993w5dio5qmtfhw.png)
 
 We will also store the current time in three custom properties:
 
@@ -178,7 +178,7 @@ That is `x = 1turn * nsec / 60sec`. Let's move these calculations into CSS:
 
 Let's check what happened:
 
-![Clock with a rotated second hand](/images/1-zlbvum9zcpld5wlbun2gfq.png "Clock with a rotated second hand")
+![Clock with a rotated second hand](/images/1-zlbvum9zcpld5wlbun2gfq.png)
 
 It's ok, 15 seconds, as specified in `--seconds`.
 
@@ -193,7 +193,7 @@ Next is the minute hand. Here everything is exactly the same as for the second h
 
 The picture confirms that everything is ok:
 
-![Clock with rotated second and minute hands](/images/1-84plpxvnt9j1y_gzug5ahw.png "Clock with rotated second and minute hands")
+![Clock with rotated second and minute hands](/images/1-84plpxvnt9j1y_gzug5ahw.png)
 
 And the hour hand remained. There are 12 hours in a full circle:
 
@@ -204,11 +204,11 @@ And the hour hand remained. There are 12 hours in a full circle:
 }
 ```
 
-![Clock with all hands turned](/images/1-qwfj5dqn1r_hqnmqznpieg.png "Clock with all hands turned")
+![Clock with all hands turned](/images/1-qwfj5dqn1r_hqnmqznpieg.png)
 
 Everything works, but I want the hour hand to move additionally during an hour, depending on the minutes, and not just jump to the next division once an hour:
 
-![Clock with the hour hand movement scheme](/images/1-zer3dia3wbemiic5rjdcsw.png "Clock with the hour hand movement scheme")
+![Clock with the hour hand movement scheme](/images/1-zer3dia3wbemiic5rjdcsw.png)
 
 Therefore, for the hour hand, let's calculate the additional rotation within one hour by the same principle as before.
 
@@ -235,11 +235,11 @@ That is `x = 1/12turn * nmin / 60min`. Let's move these calculations into CSS an
 
 We've got exactly what we need:
 
-![Clock with the hour hand movement scheme](/images/1-ejf1ntal7rpl-1dcuphh2g.png "Clock with the hour hand movement scheme")
+![Clock with the hour hand movement scheme](/images/1-ejf1ntal7rpl-1dcuphh2g.png)
 
 And this is how it works in a browser:
 
-![Browser demo](/images/1-m9sd2j_baqt0ia-dthepdw.gif "Browser demo")
+![Browser demo](/images/1-m9sd2j_baqt0ia-dthepdw.gif)
 
 ---
 
@@ -293,7 +293,7 @@ setInterval(setTime, 1000);
 
 Here's what it looks like live in dev-tools:
 
-![Working demo in developer tools](/images/1-otieqbjrl2mr-7_n5k6ckg.gif "Working demo in developer tools")
+![Working demo in developer tools](/images/1-otieqbjrl2mr-7_n5k6ckg.gif)
 
 ---
 
