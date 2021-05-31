@@ -8,7 +8,7 @@ tags:
 ---
 In this article, I will continue my exploration of the discrete animation topic I've touched in [the previous article](/posts/css-movie-or-how-to-animate-the-grid/). I looked through the list of all the CSS properties and selected a couple that I hadn't thought about animating before.
 
-The first test object was the `content` property. It's cool: it can display text, CSS counters, images and display the value of HTML-attributes.
+The first test object was the `content` property. It's cool: it can display text, CSS counters, images and display the value of HTML attributes.
 
 This is the slideshow created with one pseudo-element and its `content` property:
 
@@ -102,7 +102,7 @@ Unfortunately, the counter didn't work as I originally thought. When it was incr
 }
 ```
 
-Another kind of *content* of the `content` property is an image. It is displayed using the `url()` function - `content: url("path/to/image.jpg")`. I decided to inject the images directly into the styles, so that at the time of the slide show the image was already loaded. I moved the encoded images to custom properties so that the code remains readable:
+Another kind of *content* of the `content` property is an image. It is displayed using the `url()` function - `content: url("path/to/image.jpg")`. I decided to inject the images directly into the styles so that at the time of the slide show the image was already loaded. I moved the encoded images to custom properties so that the code remains readable:
 
 ```css
 :root {
@@ -123,9 +123,9 @@ Another kind of *content* of the `content` property is an image. It is displayed
 
 There are a few more interesting features in the demo that I won't burden the article with (it's better to [explore them live](https://codepen.io/juwain/pen/MVYVrj)).
 
-In order to justify the inaccessibiliy of all this disgrace somehow, there is a hidden text describing the content of the presentation in the `.info` paragraph in HTML. 🤓
+In order to justify the inaccessibility of all this disgrace somehow, there is a hidden text describing the content of the presentation in the `.info` paragraph in HTML. 🤓
 
----
+- - -
 
 The second property for experimenting with discrete animation was `background-image`.
 
@@ -176,7 +176,7 @@ This is literally a quick change of "frames" with pictures, like in a movie:
 
 Just 10 "frames" are replaced per second. Sufficient speed to create the illusion of continuous movement.
 
-And the second part is animation of the gradient on the background (I put it in a pseudo-element):
+And the second part is the animation of the gradient on the background (I put it in a pseudo-element):
 
 ```css
 .frame::before {
@@ -186,7 +186,7 @@ And the second part is animation of the gradient on the background (I put it in 
 }
 ```
 
-The value of the background gradient will be controled with a `—-colors` custom property:
+The value of the background gradient will be controlled with a `—-colors` custom property:
 
 ```css
 .frame::before {
@@ -219,4 +219,4 @@ Etc. There are seven colors in total, so the `color-change` animation is divided
 
 So it goes 🌈.
 
-Discrete animation has a lot of potential, so it's a pity that it still doesn't fully work in Safari and Firefox, even though it's written in the [spec](https://drafts.csswg.org/css-transitions/#animatable-properties).
+Discrete animation has a lot of potentials, so it's a pity that it still doesn't fully work in Safari and Firefox, even though it's written in the [spec](https://drafts.csswg.org/css-transitions/#animatable-properties).
