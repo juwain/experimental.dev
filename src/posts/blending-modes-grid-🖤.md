@@ -34,7 +34,7 @@ So let's start with the markup:
 </article>
 ```
 
-The `.brand` block is displayed as a grid. The grid has 20 "fluid" rows and columns + 1 side fixed width column with text:
+The `.brand` block is displayed as a grid. The grid has 20 "fluid" rows and columns + 1 side fixed-width column with text:
 
 ```css
 .brand {
@@ -96,7 +96,7 @@ The result is an excellent responsive layout:
 
 It remains unclear why we needed 20 rows and columns, and how to color a horse with the existing markup?
 
-And here pseudo-elements come to the rescue. Why are `.brand::before` and`.brand::after` not elements of the grid? They will become quite full-fledged participants of the layout, if you set any value of the property `content` to them. Interestingly, although pseudo-elements are not positioned absolutely or relatively, the `z-index` property is applied to them, that is, you can specify the order of the "layers" of grid elements.
+And here pseudo-elements come to the rescue. Why are `.brand::before` and`.brand::after` not elements of the grid? They will become quite full-fledged participants of the layout if you set any value of the property `content` to them. Interestingly, although pseudo-elements are not positioned absolutely or relatively, the `z-index` property is applied to them, that is, you can specify the order of the "layers" of grid elements.
 
 ```css
 .brand::before,
