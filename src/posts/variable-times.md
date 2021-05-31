@@ -6,9 +6,9 @@ tags:
   - css
   - custom properties
 ---
-In this article, I'll show you how I creared a demo with CSS custom properties and refined my CSS-thinking along the way.
+In this article, I'll show you how I created a demo with CSS custom properties and refined my CSS thinking along the way.
 
-Programming an analog clock is not exactly an original idea, but it seemed to me a convenient way to show the features of custom properties.
+Programming an analog clock is not exactly an original idea, but it seemed a convenient way to show the features of custom properties to me.
 
 So, here is what I've got:
 
@@ -27,7 +27,7 @@ Here's how it works:
 
 - - -
 
-Ok, let's start with markup.
+Ok, let's start with the markup.
 
 ```html
 <time class="clock">
@@ -43,12 +43,13 @@ Ok, let's start with markup.
 
 A generic container of the clock `<time>`, three hands, and a decorative SVG for drawing the face. Let's think about accessibility right away:
 
-- in "arrow" spans the current time will be written in numbers using JavaScript;
-- the **datetime** attribute of the `<time>` element will be set up with the corresponding value;
-- the decorative element `<svg>` will be hidden from screen readers with the **aria-hidden** attribute and remove the semantic meaning from it using the **role** attribute.
+* in "arrow" spans the current time will be written in numbers using JavaScript;
+* the **datetime** attribute of the `<time>` element will be set up with the corresponding value;
+* the decorative element `<svg>` will be hidden from screen readers with the **aria-hidden** attribute and remove the semantic meaning from it using the **role** attribute.
+
 - - -
 
-CSS time! I will not describe the entire code of the demo (it is better to [play with it live](https://codepen.io/juwain/pen/OQQVKE)), but will focus only on the key points.
+CSS time! I will not describe the entire code of the demo (it is better to [play with it live](https://codepen.io/juwain/pen/OQQVKE)) but will focus only on the key points.
 
 Let's define the watch appearance settings - the diameter and thickness of the watch border:
 
@@ -158,7 +159,7 @@ We will also store the current time in three custom properties:
 }
 ```
 
-Now the question is how to convert hours, minutes and seconds into units of rotation of a circle. And here school math comes to the rescue.
+Now the question is how to convert hours, minutes, and seconds into units of rotation of a circle. And here school math comes to the rescue.
 
 Let's start with the second hand. There are **60** seconds in a full circle turn - this corresponds to the **1turn** turn value. And we need to find out how much **turn** is in **n**-second. We've got this proportion:
 
@@ -241,7 +242,7 @@ And this is how it works in a browser:
 
 ![Browser demo](/images/1-m9sd2j_baqt0ia-dthepdw.gif)
 
----
+- - -
 
 Now let's make the result code alive with real data.
 
@@ -295,7 +296,6 @@ Here's what it looks like live in dev-tools:
 
 ![Working demo in developer tools](/images/1-otieqbjrl2mr-7_n5k6ckg.gif)
 
----
+- - -
 
-In general, having tried it once, I want to continue using custom properties everywhere – they turned out to be so organic in use. If IE support doesn't stop you, this is a must-have CSS-feature!
-
+In general, having tried it once, I want to continue using custom properties everywhere – they turned out to be so organic in use. If IE support doesn't stop you, this is a must-have CSS feature!
