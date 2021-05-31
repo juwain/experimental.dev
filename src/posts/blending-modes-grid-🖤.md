@@ -26,7 +26,7 @@ So let's start with the markup:
 
 ```html
 <article class="brand">
-  <img class="brand__img" src="img/horse.jpg" alt=">
+  <img class="brand__img" src="img/horse.jpg" alt="">
   <section class="brand__message">
     <h1 class="brand__heading">heading</h1>
     <p class="brand__text">text</p>
@@ -70,7 +70,7 @@ The beauty of a grid layout is that elements can easily overlap within it as if 
 }
 ```
 
-Negative index values mean the reverse order of counting: `-1` - the last row or column,` -2` - next to the last, and so on. This is convenient because you don't need to hardcode the total number of lines in the grid when specifying the "coordinates" of a grid item.
+Negative index values mean the reverse order of counting: `-1` - the last row or column,`-2` - next to the last, and so on. This is convenient because you don't need to hardcode the total number of lines in the grid when specifying the "coordinates" of a grid item.
 
 ![Grid container schema](/images/1-ixusysswrzwew3fcr8kia.png)
 
@@ -92,11 +92,11 @@ The result is an excellent responsive layout:
 
 ![Responsive grid container demo](/images/1-kl2in55agnjbvozrxwohna.gif)
 
----
+- - -
 
 It remains unclear why we needed 20 rows and columns, and how to color a horse with the existing markup?
 
-And here pseudo-elements come to the rescue. Why are `.brand::before` and` .brand::after` not elements of the grid? They will become quite full-fledged participants of the layout, if you set any value of the property `content` to them. Interestingly, although pseudo-elements are not positioned absolutely or relatively, the `z-index` property is applied to them, that is, you can specify the order of the "layers" of grid elements.
+And here pseudo-elements come to the rescue. Why are `.brand::before` and`.brand::after` not elements of the grid? They will become quite full-fledged participants of the layout, if you set any value of the property `content` to them. Interestingly, although pseudo-elements are not positioned absolutely or relatively, the `z-index` property is applied to them, that is, you can specify the order of the "layers" of grid elements.
 
 ```css
 .brand::before,
