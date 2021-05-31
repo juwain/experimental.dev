@@ -7,7 +7,7 @@ tags:
   - grid layout
   - animation
 ---
-If you are dealing with CSS, then you probably wondered which CSS properties you can animate. If you google, you can find this list - ["Animatable CSS properties"](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). As expected, this includes all sorts of colors, sizes, margins and other properties to which you can apply smooth transitions.
+If you are dealing with CSS, then you probably wondered which CSS properties you can animate. If you google, you can find this list - ["Animatable CSS properties"](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties). As expected, this includes all sorts of colors, sizes, margins, and other properties to which you can apply smooth transitions.
 
 What happens if the animation will be applied to a property which value cannot be interpolated? The [spec](https://drafts.csswg.org/css-transitions/#animatable-properties) says:
 
@@ -39,7 +39,7 @@ First, let's create a small 10 by 13 fractions grid:
 }
 ```
 
-I decided to add not just empty divs into HTML, but a paragraph with a "movie sript":
+I decided to add not just empty divs into HTML, but a paragraph with a "movie script":
 
 ```html
 <p class="field">
@@ -81,7 +81,7 @@ grid-template-areas:
   ". . . . e e e e e . . . .";
 ```
 
-The dots in the `grid-template-areas` value represent those areas of the grid that will not be filled with white, and the letters represent those that will be painted over.
+The dots in the `grid-template-areas` value represents those areas of the grid that will not be filled with white, and the letters represent those that will be painted over.
 
 In addition to such a visual declaration of the grid appearance, we need to connect blocks in HTML with names in the `grid-template-areas` layout:
 
@@ -192,8 +192,8 @@ By the way, I also decided to make the layout of the "button" with a grid, which
 
 ![Layout scheme for grid areas of the letter](/images/1-np6h_i6-1r1i56v-ln9g0g.gif)
 
----
+- - -
 
-In addition to exploring features of CSS Grid, I've discovered a new role for animation in this article. It can be used not only to smoothly change the appearance of an element, but also as a built-in CSS-timer that allows you to control the states of an element over time using any CSS properties. It's like a setTimeout / setInterval in JS.
+In addition to exploring features of CSS Grid, I've discovered a new role for animation in this article. It can be used not only to smoothly change the appearance of an element but also as a built-in CSS-timer that allows you to control the states of an element over time using any CSS properties. It's like a setTimeout / setInterval in JS.
 
-Unfortunately, this feature (at least with grid) didn't work in Safari. I think this is a bug in the browser. But, in any case, in one of the next articles I will explore this feature more detail.
+Unfortunately, this feature (at least with grid) didn't work in Safari. I think this is a bug in the browser. But, in any case, in one of the next articles, I will explore this feature in more detail.
