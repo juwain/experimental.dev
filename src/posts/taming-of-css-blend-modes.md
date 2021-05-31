@@ -10,7 +10,7 @@ Recently I came up with the idea to recreate this selective desaturation effect 
 
 ![A scene from the film "Sin City"](/images/1-yltnfq85-8a4wosrnczuiw.jpg "A scene from the “Sin City” movie")
 
-From an artistic point of view, this effect is hackneyed, but I'm interested in the technical side of the issue. That is, the task is to desaturate the entire picture, while leaving the red color intact.
+From an artistic point of view, this effect is hackneyed, but I'm interested in the technical side of the issue. That is, the task is to desaturate the entire picture while leaving the red color intact.
 
 Here's what I've got as a result of the experiments:
 
@@ -25,9 +25,9 @@ The original photo is [here](https://unsplash.com/@luiskcortes).
 
 Let's explore how it works.
 
-I realized that I need to make an SVG-mask for a specific image, then overlay a black-and-white one with a masked part over the color image. As a result, through the holes in the black-and-white image the color will be visible. But such a solution, with creating a mask by hand, is not universal - for each picture you need to make an SVG-mask separately, which is quite difficult.
+I realized that I need to make an SVG mask for a specific image, then overlay a black-and-white one with a masked part over the color image. As a result, through the holes in the black-and-white image the color will be visible. But such a solution, with creating a mask by hand, is not universal - for each picture you need to make an SVG mask separately, which is quite difficult.
 
-Looking for a more versatile way to achieve the desired effect, I decided to try making a "mask on-the-fly" from the original image using [blend modes](https://drafts.fxtf.org/compositing-1/#blending).
+Looking for a more versatile way to achieve the desired effect, I decided to try making a "mask on the fly" from the original image using [blend modes](https://drafts.fxtf.org/compositing-1/#blending).
 
 By default, CSS layers are stacked on top of each other and do not show through:
 
@@ -91,13 +91,13 @@ Almost what we need. Now we need to make the light areas of the top layer more o
 
 To achieve this, we'll use the Blending Modes again. In addition to the `mix-blend-mode` property, which "blends" two different layers, there is another property that changes the blend mode - this is `background-blend-mode`. It sets the blending mode of background elements of one layer: image, background color, gradient.
 
-So, let's set the gray background color and the blending mode of the picture with it to `hard-light` for the top layer. This is a mixed mode, it is somewhat similar to the multiply mode - in short, it makes colors brighter. When applied to a black and white image, this mode will make its highlights more contrasting.
+So, let's set the gray background color and the blending mode of the picture with it to `hard-light` for the top layer. This is a mixed-mode, it is somewhat similar to the multiply mode - in short, it makes colors brighter. When applied to a black and white image, this mode will make its highlights more contrasting.
 
 Finally, we get the desired result:
 
 ![Layering two identical images in lighten mode with one desaturated contrast layer](/images/1-xxrllxel6sf2hpijnms2fg.gif)
 
----
+- - -
 
 It remains to figure out which colors in this combination of blending modes become transparent and which do not.
 
@@ -105,8 +105,8 @@ To do this, I made a demo with layers with striped linear gradients:
 
 ![Layering colors with desaturtion](/images/1-u-ewvolqzlopqlm6hzzbcw.png)
 
-You can explore it live in [demo](https://codepen.io/juwain/pen/vRjaQb).
+You can explore it live in the [demo](https://codepen.io/juwain/pen/vRjaQb).
 
-That is, the areas of red, blue and purple shades become transparent with the combination of blending modes discussed in this article, and yellow-orange, green and blue shades remain opaque.
+That is, the areas of red, blue, and purple shades become transparent with the combination of blending modes discussed in this article, and yellow-orange, green and blue shades remain opaque.
 
 This is an interesting feature that you can use somewhere in your projects.
