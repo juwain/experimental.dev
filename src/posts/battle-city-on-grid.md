@@ -6,7 +6,7 @@ tags:
   - css
   - grid layout
 ---
-I've got the idea – recreate ["Battle City"](https://en.wikipedia.org/wiki/Battle_City) layout with CSS Grid. Why not? Here is a result:
+I've got the idea – recreate the ["Battle City"](https://en.wikipedia.org/wiki/Battle_City) layout with CSS Grid. Why not? Here is a result:
 
 ![Playfield from Battle City video game](/images/1-tp9iififqxpitv1vyfzebq.png)
 
@@ -50,6 +50,6 @@ Ok, let's create the second block…
 
 ![Playfield layout with all elements](/images/1-mb71mzdkiis1175bdb-nhw.png)
 
----
+- - -
 
-CSS Grid actually turned out to be a pretty handy tool for creating some fixed width rectangular layouts. Of course, the main power of Grid may come out in responsive and adaptive layouts, and such a demo could have been created even with floats. But unlike floats, Grid can do more.
+CSS Grid actually turned out to be a pretty handy tool for creating some fixed-width rectangular layouts. Of course, the main power of Grid may come out in responsive and adaptive layouts, and such a demo could have been created even with floats. But unlike floats, Grid can do more.
